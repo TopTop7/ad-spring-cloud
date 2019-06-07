@@ -1,3 +1,4 @@
+#Eureka server多实例配置
 server:
   port: 8080
 spring:

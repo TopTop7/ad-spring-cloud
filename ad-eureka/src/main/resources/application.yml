@@ -1,5 +1,9 @@
 #环境隔离
 spring:
     profiles:
-        active: dev
+        active: default
+
+#可以使用命令启动
+#mvn install ad-eureka生成jar包
+#cd到ad-eureka/target下，java -jar  ad-eureka-1.0-SNAPSHOT.jar  --spring.profiles.active=dev /prod  /server1  /server2
 

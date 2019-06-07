@@ -1,12 +1,13 @@
+#Eureka server单实例演示
+server:
+  port: 8080
 spring:
   application:
     name: ad-eureka
-server:
-  port: 8080
 eureka:
   instance:
     hostname: localhost
-    prefer-ip-address: false
+#    prefer-ip-address: false
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
