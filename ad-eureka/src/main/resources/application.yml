@@ -1,0 +1,5 @@
+#环境隔离
+spring:
+    profiles:
+        active: dev
+
