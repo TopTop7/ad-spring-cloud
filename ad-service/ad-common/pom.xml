@@ -3,25 +3,29 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>ad</artifactId>
         <groupId>com.poppy</groupId>
+        <artifactId>ad-service</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.poppy</groupId>
-    <artifactId>ad-gateway</artifactId>
+    <artifactId>ad-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
-    <name>ad-gateway</name>
+    <name>ad-common</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
+        <!-- 引入 Web 功能 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- JSON 处理工具 -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
         </dependency>
     </dependencies>
 

@@ -1,0 +1,15 @@
+#Eureka server单实例演示
+server:
+  port: 8080
+spring:
+  application:
+    name: ad-eureka
+eureka:
+  instance:
+    hostname: localhost
+#    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    fetch-registry: false
+    register-with-eureka: false
