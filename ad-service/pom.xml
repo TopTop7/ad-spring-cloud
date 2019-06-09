@@ -11,6 +11,10 @@
 
     <groupId>com.poppy</groupId>
     <artifactId>ad-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>ad-sponsor</module>
+    </modules>
 
 
 </project>
